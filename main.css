@@ -1,0 +1,188 @@
+@font-face {
+    font-family: Cralika;
+    src: url("fonts/Cralika.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.container {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header, footer {
+    padding: 15px;
+    background-color: #36213E;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+header .container li {
+    display: inline;
+}
+
+header .container li a {
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+header .container li::after {
+    content: '•';
+    margin-left: 5px;
+}
+header .container li.last::after {
+    content: '';
+}
+
+header h1 {
+    font-family: Cralika, Times, serif;
+    font-weight: normal;
+    font-size: 56px;
+}
+
+#about .container {
+    display: flex;
+    margin-bottom: 64px;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+#about article {
+    max-width: 328px;
+    margin-right: 32px;
+}
+
+#about h2, #info h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#about p, #about h2 {
+    margin-bottom: 16px;
+}
+
+img {
+    height: 400px;
+    border: solid 2px #36213E;
+}
+
+#about img {
+    width: 500px;
+    object-fit: cover;
+    justify-content: space-between;
+}
+
+
+#info .container{
+    display: flex;
+    margin-bottom: 64px;
+    justify-content: space-between;
+}
+
+#contact {
+    max-width: 328px;
+    margin-top: 24px;
+    margin-right: 32px;
+}
+
+#contact form {
+    margin-top: 24px;
+}
+
+#nameform {
+    display: flex;
+}
+
+#contact #nameform input {
+    width: 160px;
+    margin-right: 8px;
+}
+
+#contact input, #contact textarea, button{
+    display: block;
+    width: 328px;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: solid 1px #36213E;
+    background-color: #fcf5ff;
+    font-size: 12px;
+    color: #36213E
+}
+
+#contact textarea{
+    height: 100px;
+    resize: none;
+}
+
+#contact button {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#contact button:hover {
+    background-color: #36213E;
+    color: #fcf5ff;
+}
+
+#address h3, #social h3 {
+    margin-top: 16px;
+    color: #36213E;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+}
+
+#address img, #social img {
+    margin-top: 85px;
+    justify-content: space-between;
+    width: 500px;
+    height: 222px;
+    object-fit: cover;
+
+}
+
+#social ul {
+    margin-left: 180px;
+    height: 16px;
+}
+
+#social li {
+    display: inline;
+}
+
+#social li a img {
+    height: 30px;
+    width: 30px;
+    border: none;
+    margin-top: 16px;
+    margin-left: 34px;
+}
+
+footer  {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: #36213E;
+    color: #fff;
+    padding: 16px;
+}
